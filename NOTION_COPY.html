@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>SO-101 손가락 밑 하우징</title>
+</head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65;color:#1f2937;max-width:860px;margin:40px auto;padding:0 24px;">
+  <h1>SO-101 손가락 밑 하우징</h1>
+  <p><strong>목적:</strong> 로프 구동 로봇 손의 밑 하우징을 SO-101 손목 롤 서보 혼에 결합하기 위한 3D 프린트 부품.</p>
+
+  <h2>최종 STL</h2>
+  <p><code>손가락 밑 하우징.stl</code></p>
+
+  <h2>현재 설계 규격</h2>
+  <table style="border-collapse:collapse;width:100%;">
+    <thead>
+      <tr style="background:#f3f4f6;">
+        <th style="border:1px solid #d1d5db;padding:8px;text-align:left;">항목</th>
+        <th style="border:1px solid #d1d5db;padding:8px;text-align:left;">규격</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">원형 하우징 판</td><td style="border:1px solid #d1d5db;padding:8px;">외경 95 mm · 두께 4 mm</td></tr>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">M3 홀 중심 간격</td><td style="border:1px solid #d1d5db;padding:8px;">9.899 × 9.899 mm</td></tr>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">안쪽 M3 물방울 입구</td><td style="border:1px solid #d1d5db;padding:8px;">약 5.247 × 4.320 mm</td></tr>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">바깥 혼 결합면 M3 홀</td><td style="border:1px solid #d1d5db;padding:8px;">3.887 × 3.200 mm</td></tr>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">안쪽 입구 테이퍼 깊이</td><td style="border:1px solid #d1d5db;padding:8px;">1.6 mm</td></tr>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">혼 결합부 외곽 림</td><td style="border:1px solid #d1d5db;padding:8px;">외경 26 mm · 내경 23.6 mm</td></tr>
+      <tr><td style="border:1px solid #d1d5db;padding:8px;">중앙 체결면 리세스</td><td style="border:1px solid #d1d5db;padding:8px;">외곽 림 끝보다 2.0 mm 안쪽</td></tr>
+    </tbody>
+  </table>
+
+  <h2>설계 기준</h2>
+  <ul>
+    <li>일반 원형 홀 패턴을 추정하지 않고 <code>Wrist_Roll_SO101.stl</code>의 실제 결합면 좌표를 기준으로 사용.</li>
+    <li>중앙홀과 4개 M3 체결홀은 물방울 윤곽.</li>
+    <li>안쪽은 확대된 물방울 입구, 바깥쪽은 좁은 물방울 관통홀.</li>
+    <li>혼 결합부에는 외곽 보호 림과 중앙 리세스를 적용.</li>
+  </ul>
+
+  <h2>출력·조립 전 확인</h2>
+  <ol>
+    <li>슬라이서에서 물방울 패턴 방향과 M3 홀 4개 위치를 확인.</li>
+    <li>본 출력 전 얇은 시험 출력으로 SO-101 손목 혼 및 M3 나사 체결을 확인.</li>
+    <li>나사 길이, 혼 외곽, 손목 프레임 간섭을 실물에서 확인.</li>
+  </ol>
+
+  <h2>검증 결과</h2>
+  <p>최종 STL은 바이너리 STL 형식 및 삼각형 레코드 길이 검증을 통과했다.</p>
+
+  <h2>GitHub</h2>
+  <p><a href="https://github.com/woohiii/so101-finger-bottom-housing">woohiii/so101-finger-bottom-housing</a></p>
+
+  <hr>
+  <p style="color:#6b7280;font-size:0.9em;">실물 SO-101에 조립하기 전 반드시 시험 체결을 진행한다.</p>
+</body>
+</html>
